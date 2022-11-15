@@ -1,7 +1,14 @@
 {
   "ci": {
     "assert": {
-      "preset": "lighthouse:recommended"
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "csp-xss": "off",
+        "maskable-icon": "off",
+        "service-worker": "off",
+        "unsized-images": "off",
+        "render-blocking-resources": "off"
+      }
     }
   }
 }
